@@ -27,14 +27,16 @@ export type StickerOption = {
   color: string
 }
 
+const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path}`
+
 export const GLASSES: GlassesOption[] = [
   {
     id: 'amber-cat-eye',
     name: '프라다 젠틀몬스터 3 L2',
-    src: '/glasses/amber-cat-eye-transparent.png',
+    src: publicAsset('glasses/amber-cat-eye-transparent.png'),
     armColor: '#c7c9ca',
     aspectRatio: 2.4,
-    templeSrc: '/glasses/amber-cat-eye-temple-left-v2.png',
+    templeSrc: publicAsset('glasses/amber-cat-eye-temple-left-v2.png'),
     templeSourceRightCrop: 0.055,
     templeAspectRatio: 3,
     templeYOffset: -0.17,
@@ -44,21 +46,21 @@ export const GLASSES: GlassesOption[] = [
   {
     id: 'silver-square',
     name: '사가 02',
-    src: '/glasses/silver-square.png',
+    src: publicAsset('glasses/silver-square.png'),
     armColor: '#b9c0c5',
     aspectRatio: 4.01,
-    templeSrc: '/glasses/silver-square-temple-left.png',
+    templeSrc: publicAsset('glasses/silver-square-temple-left.png'),
     templeAspectRatio: 5.15,
     templePivotY: 0.135,
   },
   {
     id: 'black-square',
     name: '자스민 01(BL)',
-    src: '/glasses/black-square.png',
-    lensSrc: '/glasses/black-square-blue-lens.svg',
+    src: publicAsset('glasses/black-square.png'),
+    lensSrc: publicAsset('glasses/black-square-blue-lens.svg'),
     armColor: '#111111',
     aspectRatio: 3.13,
-    templeSrc: '/glasses/black-square-temple-left-thick.png',
+    templeSrc: publicAsset('glasses/black-square-temple-left-thick.png'),
     templeAspectRatio: 3.4,
     templeYOffset: -0.4,
     templeHingeOverlap: 0.045,
@@ -67,10 +69,10 @@ export const GLASSES: GlassesOption[] = [
   {
     id: 'silver-point-square',
     name: '메종 마르지엘라 - MM202 G14(SM)',
-    src: '/glasses/mm202-g14-front.png',
+    src: publicAsset('glasses/mm202-g14-front.png'),
     armColor: '#8d929a',
     aspectRatio: 2.75,
-    templeSrc: '/glasses/mm202-g14-temple-left-v2.png',
+    templeSrc: publicAsset('glasses/mm202-g14-temple-left-v2.png'),
     templeSourceRightCrop: 0.095,
     templeAspectRatio: 3,
     templeYOffset: -0.22,
@@ -83,11 +85,11 @@ export const GLASSES: GlassesOption[] = [
   {
     id: 'cherry-oval',
     name: '바닐라 R6',
-    src: '/glasses/cherry-oval.png',
+    src: publicAsset('glasses/cherry-oval.png'),
     armColor: '#9e0e22',
     aspectRatio: 2.6,
     fitScale: 1.2,
-    templeSrc: '/glasses/cherry-oval-temple-left.png',
+    templeSrc: publicAsset('glasses/cherry-oval-temple-left.png'),
     templeAspectRatio: 3,
     templeYOffset: -0.24,
     templeHingeOverlap: 0.06,
@@ -99,9 +101,9 @@ export const GLASSES: GlassesOption[] = [
 ]
 
 export const STICKERS: StickerOption[] = [
-  { id: 'coral', name: '레드 별', src: '/stickers/star-coral-material.png', color: '#e84b5f' },
-  { id: 'yellow', name: '노랑 별', src: '/stickers/star-yellow-material.png', color: '#ffd12f' },
-  { id: 'mint', name: '라임 별', src: '/stickers/star-lime-material.png', color: '#75d334' },
-  { id: 'blue', name: '하늘 별', src: '/stickers/star-blue-material.png', color: '#28b9df' },
-  { id: 'pink', name: '버건디 별', src: '/stickers/star-burgundy-material.png', color: '#8f294b' },
+  { id: 'coral', name: '레드 별', src: publicAsset('stickers/star-coral-material.png'), color: '#e84b5f' },
+  { id: 'yellow', name: '노랑 별', src: publicAsset('stickers/star-yellow-material.png'), color: '#ffd12f' },
+  { id: 'mint', name: '라임 별', src: publicAsset('stickers/star-lime-material.png'), color: '#75d334' },
+  { id: 'blue', name: '하늘 별', src: publicAsset('stickers/star-blue-material.png'), color: '#28b9df' },
+  { id: 'pink', name: '버건디 별', src: publicAsset('stickers/star-burgundy-material.png'), color: '#8f294b' },
 ]
